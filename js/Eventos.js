@@ -6,7 +6,7 @@ document.getElementById('boton_instagram').onclick = function() {
     window.open('https://www.instagram.com/bakeryshopshop/?hl=es');
 }
 document.getElementById('boton_twitter').onclick = function() {
-    Awindow.open('https://twitter.com/mdgchocolates?lang=es');
+    window.open('https://twitter.com/mdgchocolates?lang=es');
 }
 document.getElementById('boton_contactos').onclick = function() {
     alert("¡Aún no tengo contactos! Lo siento");
