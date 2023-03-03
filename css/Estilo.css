@@ -1,0 +1,160 @@
+/** Para que las columnas y el fondo ocupen 100% de la pantalla */
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: url(/Imagenes/fitz-roy-patagonia-argentina.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/** Responsive Web Design Media Query para Dipositivos Móviles */
+@media only screen and (max-width:600px) {
+    * {
+        padding: 0;
+        margin: 1px;
+    }
+    /** División Nº1 */
+    .Columna1 {
+        width: 100%;
+        background-color: blanchedalmond;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+    /** División Nº2 */
+    .Columna2 {
+        width: 100%;
+        background-color:floralwhite;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+}
+/** Responsive Web Design Media Query para PC */
+@media only screen and (min-width:600px) {
+    /** División Nº1 */
+    .Columna1 {
+        float: left;
+        width: 45%;
+        min-height: 100%;
+        background-color: blanchedalmond;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        margin-left: 5%;
+    }
+    /** División Nº2 */
+    .Columna2 {
+        float: right;
+        width: 45%;
+        min-height: 100%;
+        background-color:floralwhite;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        margin-right: 5%;
+    }
+}
+
+/** ID Foto de perfil */
+#fotografia {
+    width: 340px;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+/** Clase para centrar la fotografía y botones */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/** Tipografía Nº1 para nombre */
+.tipografia1 {
+    font-family: 'Glegoo', serif;
+    color:blanchedalmond;
+    background-color: black;
+    font-size: 45px;
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 9%;
+    margin-bottom: 2%;
+}
+
+/** Tipografía Nº2 para título */
+.tipografia2 {
+    font-family: 'Glass Antiqua', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/** Tipografía Nº3 para subtítulos */
+.tipografia3 {
+    font-family: 'Antic Slab', serif;
+    font-size: 20px;
+    background-color: black;
+    color:blanchedalmond;
+}
+
+/** Tipografía Nº4 para listas no ordenadas */
+.tipografia4 {
+    font-family: 'Glass Antiqua', cursive;
+    font-size: 20px;
+    padding-left: 10%;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    border-bottom: 5px;
+}
+
+/** Tipografía Nº5 para los años de listas no ordenadas */
+.tipografia5 {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 12px;
+    text-align: right;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0px 0px 0px 0px;
+}
+
+button {
+    width: 500px;
+    height: 40px;
+    background: rgb(2, 171, 177);
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 1%;
+    color:aliceblue;
+    font-size:20px;
+    font-weight: bold;
+    font-family: 'Glegoo', serif;
+    align-items: left;
+}
+
+button:hover {
+    background: goldenrod;
+}
+
+/** Lista desordenada sin viñeta */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/** H3 sin margen */
+h3 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    padding-left: 20px;
+}
